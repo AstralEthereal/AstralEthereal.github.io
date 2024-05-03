@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>hexo博客搭建要点</title>
+      <link href="/undefined/5f51c91f.html"/>
+      <url>/undefined/5f51c91f.html</url>
+      
+        <content type="html"><![CDATA[<p><font color="#0000FF">记一些可能会常用的<br>以下文章来源于<a href="https://www.fomal.cc/posts/3451f874.html">https://www.fomal.cc/posts/3451f874.html</a> 原作者Fomalhaut🥝</font></p><h1><span id="文章页配置">文章页配置</span></h1><h2><span id="文章版权和协议许可">文章版权和协议许可</span></h2><p>修改主题配置文件<code>_config.butterfly.yml</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">post_copyright:</span><br><span class="line">  enable: true</span><br><span class="line">  decode: false</span><br><span class="line">  author_href:</span><br><span class="line">  license: CC BY-NC-SA 4.0</span><br><span class="line">  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/</span><br></pre></td></tr></table></figure><h3><span id="对单独文章设置版权信息">对单独文章设置版权信息</span></h3><p>在文章页Front-matter单独设置。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">post_copyright:</span><br><span class="line">copyright_author: xxxx</span><br><span class="line">copyright_author_href: https://xxxxxx.com</span><br><span class="line">copyright_url: https://xxxxxx.com</span><br><span class="line">copyright_info: 此文章版权归xxxxx所有，如有转载，请註明来自原作者</span><br></pre></td></tr></table></figure><h2><span id="文章目录">文章目录</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  post: true # 文章页是否显示 TOC</span><br><span class="line">  page: false # 普通页面是否显示 TOC</span><br><span class="line">  number: true # 是否显示章节数</span><br><span class="line">  expand: false# 是否展开 TOC</span><br><span class="line">  style_simple: false # for post 简洁模式（侧边栏只显示 TOC, 只对文章页有效 ）</span><br></pre></td></tr></table></figure><h2><span id="相关文章推荐">相关文章推荐</span></h2><blockquote><p>相关文章推荐的原理是根据文章tags的比重来推荐</p></blockquote><p>related_post:<br>  enable: true<br>  limit: 6 # 显示推荐文章数目<br>  date_type: created # or created or updated 文章日期显示创建日或者更新日</p><h1><span id="seo优化">SEO优化</span></h1><p>搜索引擎(SEO)优化可以方便谷歌，百度等浏览器收录你的博客</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> blog </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown基础语法</title>
+      <link href="/undefined/5c98fe12.html"/>
+      <url>/undefined/5c98fe12.html</url>
+      
+        <content type="html"><![CDATA[<h1><span id="markdown-语法"><font face="黑体" font color="orange">markdown 语法</font></span></h1><p><a href="https://markdown.com.cn/basic-syntax/">https://markdown.com.cn/basic-syntax/</a></p><h2><span id="目录">目录</span></h2><!-- toc --><ul><li><a href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">准备工作</a></li><li><a href="#%E5%BF%AB%E6%8D%B7%E9%94%AE">快捷键</a></li><li><a href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">基本语法</a></li><li><a href="#%E5%85%B6%E4%BB%96%E6%93%8D%E4%BD%9C">其他操作</a></li><li><a href="#%E5%AF%BC%E5%87%BA%E4%B8%BApdf%E6%96%87%E6%A1%A3">导出为PDF文档</a></li><li><a href="#%E6%9B%B4%E5%A4%9A%E5%86%85%E5%AE%B9">更多内容</a></li></ul><ul><li><a href="#dlc">dlc</a><ul><li><a href="#%E5%9B%BE%E5%BA%8A">图床</a><ul><li><a href="#%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A">免费图床</a></li><li><a href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E5%BA%8A%E9%9C%80%E8%A6%81%E8%87%AA%E8%B4%AD%E5%9F%9F%E5%90%8D">服务器图床(需要自购域名)</a></li><li><a href="#github%E5%9B%BE%E5%BA%8A%E9%9C%80%E8%A6%81cdn">github图床（需要cdn）</a></li></ul></li></ul></li></ul><!-- tocstop --><p>&#96;</p><h2><span id="准备工作">准备工作</span></h2><p>markdown支持html和css语法<br>创建后缀名为md，打开同步浏览模式，即可看到实时预览效果。<br><strong>下载插件</strong><br>Markdown all in one<br>Paste Image<br>Markdown Preview Enhanced</p><h2><span id="快捷键">快捷键</span></h2><p>ctrl+b 加粗<br>ctrl+i 斜体<br>ctrl+alt+v 粘贴图片<br>（也可以把图片放进文件里，然后打！[]选择）</p><h2><span id="基本语法">基本语法</span></h2><ol><li><p><strong>标题</strong><br>在行首加#(#号后面要加空格)，#表示1-6级标题</p></li><li><p><strong>引用</strong><br>在行首加&gt;，表示引用</p><blockquote><p>这是一个引用</p><blockquote><p>当然，可以嵌套</p></blockquote></blockquote></li><li><p><strong>列表</strong><br>无序列表用*，有序列表用数字加.(数字不必有顺序)</p><ul><li>列表1</li></ul><ul><li>列表2<br>Todo list</li></ul><ul><li><input disabled type="checkbox"> a</li></ul></li><li><p><strong>表格</strong></p><table><thead><tr><th align="left">左对齐</th><th align="center">居中对齐</th><th align="right">右对齐</th></tr></thead><tbody><tr><td align="left">1</td><td align="center">2</td><td align="right">3</td></tr></tbody></table><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 居中对齐 | 右对齐 |</span><br><span class="line">  | :----- | :------: | -----: |</span><br><span class="line">  | 1      |    2     |      3 |</span><br></pre></td></tr></table></figure></li><li><p><strong>段落</strong><br>换行：按两下空格再回车<br>分割线：三个以上的*或_，然后回车  </p><hr></li><li><p><strong>字体</strong><br> 斜体：两个<code>*</code> <em>斜体</em><br> 高亮：两个<code>==</code> &#x3D;&#x3D;高亮&#x3D;&#x3D;<br> 粗体：两个<code>**</code> <strong>粗体</strong><br> 斜粗体：两个<code>***</code> <em><strong>斜粗体</strong></em><br> 删除：~~   <del>删除</del><br> 下划线：<code>&lt;u&gt;</code> <u>下划线</u></p></li></ol><ul><li>脚注</li><li>你好[^1] <code>[^1]</code></li></ul><p>  <code>[^1]: 这里是脚注内容(一般写最后)</code><br>  [^1]: 这里是脚注内容(一般放最后)</p><ol><li><p><strong>链接</strong><br>该笔记参考于[【全网最详细Markdown入门使用教程】40分钟教会你用免费的vscode做出好看的笔记]<br>(<a href="https://www.bilibili.com/video/BV1bK4y1i7BY/?spm_id_from=333.880.my_history.page.click&vd_source=b4486fc045740adef7ef5aa8a3a927cb">https://www.bilibili.com/video/BV1bK4y1i7BY/?spm_id_from=333.880.my_history.page.click&amp;vd_source=b4486fc045740adef7ef5aa8a3a927cb</a>)<br>用html语法也是可以的<a href="https://markdown.com.cn/basic-syntax/links.html" title="该笔记也参考于">超链接显示名</a><br>那么锚点呢</p></li><li><p><strong>代码</strong><br>代码块:三个&#96; <code>python</code>  </p><p>一句代码:一个<code>print(&quot;hello world&quot;)</code></p></li><li><p><strong>图片</strong><br>   <code>![图片alt](图片链接 &quot;图片title&quot;)</code><br>   万能的html，还可以来调图片格式<br>   <code>&lt;img src=&quot;图片链接&quot; alt=&quot;图片alt&quot; title=&quot;图片title&quot;&gt;</code><br>   复制图片然后按ctrl+alt+v即可，不过会加入到文件夹中。反过来想，是不是不用联网了-v-<br>   (要求安装Paste Image插件)<br>   <img src="/images/2024-04-22-15-41-35.png" alt="结城理" title="想你了牢理"></p></li></ol><h2><span id="其他操作">其他操作</span></h2><ul><li>插入latex公式<br>$$\int_{-\infty}^{\infty}e^{-x^2},dx$$<br>在一段文字中插入$lim_{x\to\infty}f(x)$  或者$f(x)&#x3D;\lim_{x\to\infty}f(x)$公式<br>(按ctrl+m,连按两次则是4个美元符号)</li><li>还是万能的html和css语法，美化笔记<br><strong>个性化设置</strong><br>File-Preferences-Settings-Markdown<br>文件-首选项-设置-翻到Markdown</li></ul><h2><span id="导出为pdf文档">导出为PDF文档</span></h2><p>open in browser 打开浏览器 手动另存为pdf</p><h2><span id="更多内容">更多内容</span></h2><ol><li><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C">https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C</a></li><li><a href="https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/">https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/</a></li></ol><h1><span id="dlc">dlc</span></h1><p>当我部署到基于hexo框架的博客时，发现很多语法都未被渲染，或是格式不正确。于是……又是一个小坑。<br>另外，博客美化也是一个大坑…记得多备份。学完前端再来做会比较好</p><h2><span id="图床">图床</span></h2><p>博客中插入图片时，需要将图片上传到图床，然后将图片链接插入到markdown文档中。</p><h3><span id="免费图床">免费图床</span></h3><p>   好处：免费，快速，稳定<br>   坏处：怕跑路</p><h3><span id="服务器图床需要自购域名">服务器图床(需要自购域名)</span></h3><h3><span id="github图床需要cdn">github图床（需要cdn）</span></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> Markdown </tag>
+            
+            <tag> LaTex </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>我想想</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>游戏人生</title>
+      <link href="/games/index.html"/>
+      <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>看过的电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网易云，启动！</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<p>准备整全局的aplayer<br>网易云好像可以生成外链</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>生成传送门中</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/c.css"/>
+      <url>/css/c.css</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>阅读是好文明</title>
+      <link href="/reading/reading.html"/>
+      <url>/reading/reading.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
