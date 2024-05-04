@@ -65,17 +65,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/c.css"/>
-      <url>/css/c.css</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我想想</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -101,6 +90,17 @@
       <title>游戏人生</title>
       <link href="/games/index.html"/>
       <url>/games/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/c.css"/>
+      <url>/css/c.css</url>
       
         <content type="html"><![CDATA[]]></content>
       
