@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-06T13:00:17.176Z</updated>
+  <updated>2024-05-06T13:18:39.658Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/undefined/c15f89e0.html"/>
     <id>http://example.com/undefined/c15f89e0.html</id>
     <published>2024-05-06T07:09:28.000Z</published>
-    <updated>2024-05-06T13:00:17.176Z</updated>
+    <updated>2024-05-06T13:18:39.658Z</updated>
     
-    <content type="html"><![CDATA[<h1><span id="latex公式">Latex公式</span></h1><p>辅助写公式：&lt;<a href="http://www.latexlive.com>">www.latexlive.com&gt;</a></p><h2><span id="希腊字母">希腊字母</span></h2><p><img src="/images%5Clatex.png" alt="alt text"></p><h2><span id="上下标">上下标</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x^2，x_i，x_&#123;ij&#125;</span><br><span class="line">如果多于一个字符，则需要用&#123;&#125;括起来</span><br></pre></td></tr></table></figure><h3><span id="关于斜体和直立体">关于斜体和直立体</span></h3><p>英文字母只有在表示变量(或单一字符的函数名称,如f(x)),才使用斜体。其余情况都应使用直立体。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x_i</span><br><span class="line">x_&#123;\text i&#125;</span><br><span class="line">&#123;\rm A&#125;B</span><br></pre></td></tr></table></figure><h2><span id="分式">分式</span></h2>]]></content>
+    <content type="html"><![CDATA[<h1><span id="latex公式">Latex公式</span></h1><p>辅助写公式：&lt;<a href="http://www.latexlive.com>">www.latexlive.com&gt;</a></p><h2><span id="希腊字母">希腊字母</span></h2><p><img src="/images/latex.png" alt="alt text"></p><h2><span id="上下标">上下标</span></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x^2，x_i，x_&#123;ij&#125;</span><br><span class="line">如果多于一个字符，则需要用&#123;&#125;括起来</span><br></pre></td></tr></table></figure><h3><span id="关于斜体和直立体">关于斜体和直立体</span></h3><p>英文字母只有在表示变量(或单一字符的函数名称,如f(x)),才使用斜体。其余情况都应使用直立体。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x_i</span><br><span class="line">x_&#123;\text i&#125;</span><br><span class="line">&#123;\rm A&#125;B</span><br></pre></td></tr></table></figure><h2><span id="分式">分式</span></h2>]]></content>
     
     
       
